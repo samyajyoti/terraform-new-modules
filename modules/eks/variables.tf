@@ -21,4 +21,8 @@ variable "subnet_ids" {
   type        = list(string)
   default  =   ["subnet-0958640cdbcfead6c", "subnet-04457da64d3a88158"]
 }
-
+variable "kms_key_arn" {
+  description = "KMS key ARN for EKS secrets encryption"
+  type        = string
+  default     = ""
+}
